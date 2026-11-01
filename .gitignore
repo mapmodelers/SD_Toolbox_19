@@ -1,0 +1,6 @@
+*.sbsar
+*.blend1
+*.sbsprj
+.autosave/
+tools/*_log.txt
+Thumbs.db
