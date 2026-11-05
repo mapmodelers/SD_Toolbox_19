@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SD Toolbox 19: free Substance Designer node library (flood fill, masks, shape cuts)</title>
+<meta name="description" content="Free Substance 3D Designer node library (.sbs) from 2019: 15 grayscale nodes for flood fill, shape cuts, curvature, slope and edge-wear masks, and blends. Archive, MIT license.">
+<meta name="keywords" content="Substance Designer, Substance 3D Designer, Adobe Substance, sbs, node library, procedural textures, procedural materials, flood fill, curvature mask, slope mask, edge wear, texturing, game art, technical art">
+<meta name="author" content="Adrien Lelièvre">
+<link rel="canonical" href="https://mapmodelers.github.io/SD_Toolbox_19/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SD Toolbox 19: free Substance Designer node library">
+<meta property="og:description" content="15 grayscale Substance Designer nodes from 2019: flood fill, shape cuts, masks and blends. Free archive, MIT.">
+<meta property="og:url" content="https://mapmodelers.github.io/SD_Toolbox_19/">
+<meta property="og:image" content="https://mapmodelers.github.io/SD_Toolbox_19/social_preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mapmodelers.github.io/SD_Toolbox_19/social_preview.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"SD Toolbox 19",
+ "description":"Free Substance 3D Designer node library (.sbs) from 2019: 15 grayscale nodes for flood fill, shape cuts, masks and blends.",
+ "codeRepository":"https://github.com/mapmodelers/SD_Toolbox_19","license":"https://opensource.org/licenses/MIT",
+ "programmingLanguage":"Substance Designer (.sbs)","dateCreated":"2019","datePublished":"2026-11-01",
+ "author":{"@type":"Person","name":"Adrien Lelièvre","url":"https://www.artstation.com/adrienlelievre"},
+ "keywords":"Substance Designer, node library, flood fill, procedural textures, masks"}
+</script>
+<style>
+  body{margin:0;font-family:Verdana,Tahoma,"DejaVu Sans",sans-serif;color:#0c2160;background:#ece9d8}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{color:#fff;padding:40px 0 30px;margin-bottom:30px;text-shadow:1px 1px 0 #08206a;background:linear-gradient(#1046be,#2f7fe6);border-bottom:6px solid #3c9a2e}
+  header img{width:100%;border:2px solid #fff;border-radius:8px;box-shadow:0 6px 20px rgba(0,20,80,.45);display:block}
+  h1{font-size:40px;margin:26px 0 6px}
+  .lead{font-size:18px;color:#dce9ff;margin:0 0 18px;max-width:820px;line-height:1.45}
+  .pill{display:inline-block;padding:10px 20px;margin:0 10px 10px 0;border-radius:22px;border:1px solid #fff;color:#fff;font-weight:bold;text-decoration:none;
+        background:linear-gradient(#5aa0ff,#1a62dc 50%,#1554c8 51%,#2a76f0)}
+  .pill.green{background:linear-gradient(#9be06a,#3c9a2e 50%,#2f8a22 51%,#4fae3a)}
+  main{background:#fff;border:1px solid #b8c7e6;border-radius:8px;padding:26px 30px;margin-bottom:40px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  h2{color:#0033a0;font-size:22px;border-bottom:2px solid #d6dff7;padding-bottom:6px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  figure{margin:0}
+  figure img{width:100%;border:1px solid #c9d5ef;border-radius:6px;display:block}
+  figcaption{font-size:13px;color:#33457a;margin-top:6px}
+  ol li{margin:6px 0}
+  footer{font-size:13px;color:#4a5a80;padding:0 0 30px}
+  a{color:#0b4fc7}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="social_preview.png" alt="SD Toolbox 19: 15 grayscale nodes for Substance Designer, built 2019">
+  <h1>SD Toolbox 19</h1>
+  <p class="lead">A free <b>Substance 3D Designer node library</b> (.sbs) of 15 grayscale utility nodes for procedural texturing: flood fill shortcuts, shape cutting, mask generators (curvature, slope, edge wear, dirt, leaks), blend and transform helpers. Built in 2019, published in 2026 as an archive. MIT license.</p>
+  <a class="pill green" href="https://github.com/mapmodelers/SD_Toolbox_19/releases/download/archive-2026/SD_Toolbox_19.sbs">Download for Designer 2023+</a>
+  <a class="pill" href="https://github.com/mapmodelers/SD_Toolbox_19/releases/download/archive-2026/SD_Toolbox_19_SD2019.sbs">Designer 2019 to 2022</a>
+  <a class="pill" href="https://github.com/mapmodelers/SD_Toolbox_19">Source on GitHub</a>
+</div></header>
+<div class="wrap"><main>
+  <h2>Install</h2>
+  <ol>
+    <li>Download the .sbs for your Substance Designer version.</li>
+    <li><b>Edit › Preferences › Projects › Library</b>: add the folder holding it (not recursive). The nodes appear under <b>SD_Toolbox_19</b>, with ♠ in front of their names.</li>
+    <li>Open the package for the <b>♠ SD Toolbox 19 Showroom</b> graph: one demo of each node.</li>
+  </ol>
+  <h2>The 15 nodes</h2>
+  <div class="grid">
+    <figure><img src="cards/QuickFlood.png" alt="QuickFlood: Substance Designer flood fill node, input and outputs" loading="lazy"><figcaption><b>QuickFlood</b>: flood fill in one node, with size, gradient and random maps.</figcaption></figure>
+    <figure><img src="cards/Dilate.png" alt="Dilate: Substance Designer node that fills the gaps between flood fill cells" loading="lazy"><figcaption><b>Dilate</b>: grows each shape's value into the black gaps.</figcaption></figure>
+    <figure><img src="cards/MaskSize.png" alt="Mask: Size, Substance Designer size selection mask node" loading="lazy"><figcaption><b>Mask: Size</b>: keeps the largest or smallest shapes.</figcaption></figure>
+    <figure><img src="cards/MaskRandom.png" alt="Mask: Random, Substance Designer random selection mask node" loading="lazy"><figcaption><b>Mask: Random</b>: keeps a random share of the shapes.</figcaption></figure>
+    <figure><img src="cards/Cut_Simple.png" alt="Cut Simple: Substance Designer shape cutting node" loading="lazy"><figcaption><b>Cut Simple</b>: cuts every shape along a random line.</figcaption></figure>
+    <figure><img src="cards/SharpWarp.png" alt="Sharp Warp: Substance Designer edge chipping warp node" loading="lazy"><figcaption><b>Sharp Warp</b>: chips straight edges into sharp breaks.</figcaption></figure>
+    <figure><img src="cards/Fillet.png" alt="Fillet: Substance Designer rounded corners node" loading="lazy"><figcaption><b>Fillet</b>: rounds the shapes' corners.</figcaption></figure>
+    <figure><img src="cards/Tips.png" alt="Tips: Substance Designer shape tips mask node" loading="lazy"><figcaption><b>Tips</b>: isolates the inner and outer tips of the shapes.</figcaption></figure>
+    <figure><img src="cards/LazyMasks.png" alt="Mask: Lazy, Substance Designer curvature, slope and edge wear masks from a height map" loading="lazy"><figcaption><b>Mask: Lazy</b>: 10 masks from a height map (curvature, slopes, edge wear, dirt, leaks, sun bleach).</figcaption></figure>
+    <figure><img src="cards/Blend_Compose.png" alt="Compose: Substance Designer pattern composite node" loading="lazy"><figcaption><b>Compose</b>: keeps a pattern only inside large enough shapes.</figcaption></figure>
+    <figure><img src="cards/CustomCells.png" alt="Custom Cells: Substance Designer bevelled cells node" loading="lazy"><figcaption><b>Custom Cells</b>: turns a shape pattern into bevelled cells.</figcaption></figure>
+    <figure><img src="cards/Blend_Add.png" alt="Combine: Substance Designer add and subtract blend node" loading="lazy"><figcaption><b>Combine</b>: add or subtract through a mask.</figcaption></figure>
+    <figure><img src="cards/Blend_Multiply.png" alt="Multiply: Substance Designer multiply blend node" loading="lazy"><figcaption><b>Multiply</b>: multiply through a mask.</figcaption></figure>
+    <figure><img src="cards/Transform_TileMode.png" alt="Transform: Substance Designer transform 2D node with tiling toggles" loading="lazy"><figcaption><b>Transform</b>: transform 2D with tile X, Y or both.</figcaption></figure>
+    <figure><img src="cards/LazyCurves.png" alt="Lazy Curves: Substance Designer preset contrast curves node" loading="lazy"><figcaption><b>Lazy Curves</b>: 9 preset contrast curves.</figcaption></figure>
+  </div>
+</main>
+<footer>By Adrien Lelièvre (<a href="https://www.artstation.com/adrienlelievre">ArtStation</a>) · <a href="https://github.com/mapmodelers/SD_Toolbox_19/blob/main/CHANGELOG.md">Changelog</a> · MIT license · Built 2019, archived 2026, not maintained.</footer>
+</div>
+</body>
+</html>
