@@ -1,19 +1,24 @@
-![SD Toolbox 19](docs/banner.png)
+![SD Toolbox 19: 15 grayscale nodes for Substance Designer](docs/social_preview.png)
 
 # SD Toolbox 19
 
-Grayscale utility nodes for Substance Designer: flood-fill shortcuts, shape cuts, mask generators and blend helpers. Built in **2019**, published in 2026 as an **archive**. Cleaned up and documented, not maintained.
+[![Substance Designer 2019 to 2023+](https://img.shields.io/badge/Substance%20Designer-2019%20to%202023%2B-0054e3)](#install)
+[![License: MIT](https://img.shields.io/badge/license-MIT-3a8f3a)](LICENSE)
+[![Status: archive](https://img.shields.io/badge/status-archive%20(2019)-ece9d8)](CHANGELOG.md)
+[![Download](https://img.shields.io/badge/download-archive--2026-0054e3)](https://github.com/mapmodelers/SD_Toolbox_19/releases/tag/archive-2026)
 
-Only depends on the stock library, no bitmaps.
+A free **Substance 3D Designer node library** (`.sbs`) of 15 grayscale utility nodes for procedural texturing: **flood fill** shortcuts, **shape cutting**, **mask generators** (curvature, slope, edge wear, dirt, leaks), and **blend** and transform helpers. Built in **2019**, published in 2026 as an **archive**: cleaned up and documented, not maintained.
+
+It uses only the stock library, with no bitmaps. Every node has a library icon, a description and documented parameters.
 
 | File | For |
 |---|---|
-| [`SD_Toolbox_19.sbs`](SD_Toolbox_19.sbs) | Substance 3D Designer 2023 and later |
-| [`legacy/SD_Toolbox_19_SD2019.sbs`](legacy/SD_Toolbox_19_SD2019.sbs) | Substance Designer 2019 to 2022 (original 2019 format) |
+| [`SD_Toolbox_19.sbs`](https://github.com/mapmodelers/SD_Toolbox_19/releases/download/archive-2026/SD_Toolbox_19.sbs) | Substance 3D Designer 2023 and later |
+| [`SD_Toolbox_19_SD2019.sbs`](https://github.com/mapmodelers/SD_Toolbox_19/releases/download/archive-2026/SD_Toolbox_19_SD2019.sbs) | Substance Designer 2019 to 2022 (original 2019 format) |
 
 ## Install
 
-1. Download the file for your Designer version.
+1. Download the file for your Designer version (links above, or from the [release](https://github.com/mapmodelers/SD_Toolbox_19/releases/tag/archive-2026)).
 2. **Edit › Preferences › Projects › Library**: add its folder (not recursive). The tools appear under **SD_Toolbox_19**, with ♠ in front of their names.
 3. Open the package to see **♠ SD Toolbox 19 Showroom**, one demo of each tool.
 
@@ -67,3 +72,5 @@ Most flood-fill tools start with a **Clear Input** step (a Histogram Scan, Posit
 ---
 
 [Changelog](CHANGELOG.md) · MIT [License](LICENSE) · Adrien Lelièvre, [ArtStation](https://www.artstation.com/adrienlelievre) · `tools/` holds the build scripts (format update, compile check, demo renders)
+
+<sub>Keywords: Substance Designer, Substance 3D Designer, Adobe Substance, SBS node library, procedural textures, procedural materials, flood fill, curvature mask, slope mask, edge wear, texture tools, game art, technical art.</sub>
