@@ -24,4 +24,4 @@ The toolbox was built in 2019. This release is a cleanup of the 2019 working fil
 - Showroom: one titled frame per tool, with new demos for Fillet, Lazy Curves and Custom Cells. It is hidden from the library.
 - Removed: the internal Workshop sandbox graph, and 4 stock-library dependencies only it used.
 - `SD_Toolbox_19.sbs` is converted to the current Designer format by Designer's own `sbsupdater`, so it opens without an update prompt. The original-format file stays in `legacy/`.
-- `docs/` holds the social preview image (2001-era window style), the demo cards and the icons. `tools/` holds `update_format.cmd`, `validate.cmd` and `render_demo.cmd`.
+- `docs/` holds the social preview image (2000s / XP-era style), the demo cards and the icons. `tools/` holds `update_format.cmd`, `validate.cmd` and `render_demo.cmd`.
