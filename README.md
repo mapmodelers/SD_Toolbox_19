@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-3a8f3a)](LICENSE)
 [![Status: archive](https://img.shields.io/badge/status-archive%20(2019)-ece9d8)](CHANGELOG.md)
 [![Download](https://img.shields.io/badge/download-archive--2026-0054e3)](https://github.com/mapmodelers/SD_Toolbox_19/releases/tag/archive-2026)
+[![Website](https://img.shields.io/badge/website-mapmodelers.github.io-3a8f3a)](https://mapmodelers.github.io/SD_Toolbox_19/)
 
 A free **Substance 3D Designer node library** (`.sbs`) of 15 grayscale utility nodes for procedural texturing: **flood fill** shortcuts, **shape cutting**, **mask generators** (curvature, slope, edge wear, dirt, leaks), and **blend** and transform helpers. Built in **2019**, published in 2026 as an **archive**: cleaned up and documented, not maintained.
 
